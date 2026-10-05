@@ -1,4 +1,4 @@
-# [NN] Three Blind Mice
+# Three Blind Mice
 
 TDT4173 course project (NTNU, autumn 2026): predicting unit commitment (ON/OFF per generator per hour) for the Tokke–Vinje hydropower system, as a Kaggle InClass competition from SINTEF Energy Research.
 
