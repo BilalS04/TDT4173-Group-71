@@ -19,7 +19,8 @@ Data is not tracked in Git. Download it from Kaggle and place it in `data/`.
 - `report/`: project report
 - `experiments.csv`: experiment log
 
-- ## Team
-Bilal Saher
-Marco Josefsen
-Teresa Tran
+## Team
+
+- Bilal Saher
+- Marco Josefsen
+- Teresa Tran
