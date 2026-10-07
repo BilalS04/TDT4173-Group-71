@@ -1,0 +1,326 @@
+{
+  "seed": 71,
+  "validation_years": [
+    2020,
+    2021,
+    2022
+  ],
+  "gap_days": 7,
+  "units": [
+    "Hogga_G1",
+    "Tokke_G1",
+    "Tokke_G2",
+    "Tokke_G3",
+    "Tokke_G4",
+    "Lio_G1",
+    "Byrte_G1",
+    "Vinje_G1",
+    "Vinje_G2",
+    "Vinje_G3",
+    "Haukeli_G1",
+    "Songa_G1",
+    "Kjela_G1",
+    "Vesle Kjela_G1"
+  ],
+  "unit_reservoirs": {
+    "Hogga_G1": [
+      "Bandak"
+    ],
+    "Tokke_G1": [
+      "Vinjevatn"
+    ],
+    "Tokke_G2": [
+      "Vinjevatn"
+    ],
+    "Tokke_G3": [
+      "Vinjevatn"
+    ],
+    "Tokke_G4": [
+      "Vinjevatn"
+    ],
+    "Lio_G1": [
+      "Byrtevatn"
+    ],
+    "Byrte_G1": [
+      "Botnedalsvatn"
+    ],
+    "Vinje_G1": [
+      "Vaamarvatn"
+    ],
+    "Vinje_G2": [
+      "Vaamarvatn"
+    ],
+    "Vinje_G3": [
+      "Vaamarvatn"
+    ],
+    "Haukeli_G1": [
+      "Vatjern"
+    ],
+    "Songa_G1": [
+      "Bitdalsvatn",
+      "Songavatn"
+    ],
+    "Kjela_G1": [
+      "Foersvatn"
+    ],
+    "Vesle Kjela_G1": [
+      "Kjelavatn"
+    ]
+  },
+  "logistic_C": 1.0,
+  "baseline_alpha": 100,
+  "features": {
+    "Hogga_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Hogga_G1",
+      "fill_Hogga_G1",
+      "inflow_Hogga_G1",
+      "spread_Hogga_G1",
+      "rank_fill_Hogga_G1",
+      "spread_t_Hogga_G1"
+    ],
+    "Tokke_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Tokke_G1",
+      "fill_Tokke_G1",
+      "inflow_Tokke_G1",
+      "spread_Tokke_G1",
+      "rank_fill_Tokke_G1",
+      "spread_t_Tokke_G1"
+    ],
+    "Tokke_G2": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Tokke_G2",
+      "fill_Tokke_G2",
+      "inflow_Tokke_G2",
+      "spread_Tokke_G2",
+      "rank_fill_Tokke_G2",
+      "spread_t_Tokke_G2"
+    ],
+    "Tokke_G3": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Tokke_G3",
+      "fill_Tokke_G3",
+      "inflow_Tokke_G3",
+      "spread_Tokke_G3",
+      "rank_fill_Tokke_G3",
+      "spread_t_Tokke_G3"
+    ],
+    "Tokke_G4": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Tokke_G4",
+      "fill_Tokke_G4",
+      "inflow_Tokke_G4",
+      "spread_Tokke_G4",
+      "rank_fill_Tokke_G4",
+      "spread_t_Tokke_G4"
+    ],
+    "Lio_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Lio_G1",
+      "fill_Lio_G1",
+      "inflow_Lio_G1",
+      "spread_Lio_G1",
+      "rank_fill_Lio_G1",
+      "spread_t_Lio_G1"
+    ],
+    "Byrte_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Byrte_G1",
+      "fill_Byrte_G1",
+      "inflow_Byrte_G1",
+      "spread_Byrte_G1",
+      "rank_fill_Byrte_G1",
+      "spread_t_Byrte_G1"
+    ],
+    "Vinje_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Vinje_G1",
+      "fill_Vinje_G1",
+      "inflow_Vinje_G1",
+      "spread_Vinje_G1",
+      "rank_fill_Vinje_G1",
+      "spread_t_Vinje_G1"
+    ],
+    "Vinje_G2": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Vinje_G2",
+      "fill_Vinje_G2",
+      "inflow_Vinje_G2",
+      "spread_Vinje_G2",
+      "rank_fill_Vinje_G2",
+      "spread_t_Vinje_G2"
+    ],
+    "Vinje_G3": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Vinje_G3",
+      "fill_Vinje_G3",
+      "inflow_Vinje_G3",
+      "spread_Vinje_G3",
+      "rank_fill_Vinje_G3",
+      "spread_t_Vinje_G3"
+    ],
+    "Haukeli_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Haukeli_G1",
+      "fill_Haukeli_G1",
+      "inflow_Haukeli_G1",
+      "spread_Haukeli_G1",
+      "rank_fill_Haukeli_G1",
+      "spread_t_Haukeli_G1"
+    ],
+    "Songa_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Songa_G1",
+      "fill_Songa_G1",
+      "inflow_Songa_G1",
+      "spread_Songa_G1",
+      "rank_fill_Songa_G1",
+      "spread_t_Songa_G1"
+    ],
+    "Kjela_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Kjela_G1",
+      "fill_Kjela_G1",
+      "inflow_Kjela_G1",
+      "spread_Kjela_G1",
+      "rank_fill_Kjela_G1",
+      "spread_t_Kjela_G1"
+    ],
+    "Vesle Kjela_G1": [
+      "t",
+      "hour",
+      "weekday",
+      "season",
+      "doy_sin",
+      "doy_cos",
+      "price",
+      "price_rank",
+      "price_minus_mean",
+      "price_week_mean",
+      "wv_Vesle Kjela_G1",
+      "fill_Vesle Kjela_G1",
+      "inflow_Vesle Kjela_G1",
+      "spread_Vesle Kjela_G1",
+      "rank_fill_Vesle Kjela_G1",
+      "spread_t_Vesle Kjela_G1"
+    ]
+  }
+}
