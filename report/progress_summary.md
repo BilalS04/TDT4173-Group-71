@@ -11,6 +11,10 @@ Both models use expanding-window validation for 2020, 2021, and 2022 with a seve
 |---|---:|---:|---:|---:|
 | Baseline | 0.5693 | 0.5132 | 0.5731 | 0.5519 ± 0.0335 |
 | Logistic regression | 0.8467 | 0.9046 | 0.9432 | 0.8982 ± 0.0486 |
+| Extra Trees (defaults, untuned) | 0.8355 | 0.8849 | 0.9147 | 0.8784 ± 0.0400 |
+| LightGBM (defaults, untuned) | 0.8384 | 0.8938 | 0.9214 | 0.8845 ± 0.0422 |
+
+Extra Trees ([notebook](../notebooks/extra_trees.ipynb)) and LightGBM ([notebook](../notebooks/lightgbm.ipynb)) use the same features and folds. With default settings, both are slightly below logistic regression in all three years, and LightGBM is slightly above Extra Trees. Both rank price minus terminal water value (`spread`) and the water value itself among the most important features. In LightGBM, `spread` alone accounts for about half of the gain.
 
 Logistic regression outperformed the baseline in all three years. Both models were fitted on all labeled cases, and their test predictions were exported and checked against the Kaggle format. Coefficients and validation predictions are saved for interpretation and comparison. No predictions have been submitted to Kaggle in this work.
 

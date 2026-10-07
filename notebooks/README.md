@@ -19,3 +19,13 @@ Validation prediction CSV files contain `Run No` and the same 2352 prediction co
 The initial features use initial storage, terminal water values, full-horizon prices and inflows, calendar features, and price rank. Future actual reservoir volume and calculation time are excluded. Check that full-horizon inputs are permitted by the competition specification. These are initial experiments, not tuned models; use the fixed local validation folds to evaluate changes.
 
 This notebook is an experiment notebook. The final two submission notebooks and report still need to be prepared and checked against the course requirements.
+
+## Extra Trees
+
+`extra_trees.ipynb` uses the same data loading, features, folds and metric as the logistic regression notebook, with one `ExtraTreesClassifier` per generator and scikit-learn defaults (untuned). Each forest predicts immediately and is then discarded, because one forest takes about 300–400 MB. The run takes about 7 minutes with 4 cores. Outputs go to `outputs/extra_trees/` (OOF, submission, MDI feature importances, `config.json`). Rows in `outputs/evaluation/cv_scores.csv` and `experiment_log.csv` are merged in, not overwritten.
+
+## LightGBM
+
+`lightgbm.ipynb` follows the same pattern with one `LGBMClassifier` per generator and LightGBM defaults (100 rounds, `learning_rate=0.1`, `num_leaves=31`, untuned). There is no early stopping on the validation year. The run takes about 1.5 minutes with 4 cores. Outputs go to `outputs/lightgbm/`, with normalized gain importances.
+
+Note: `logistic_regression_baseline.ipynb` overwrites `cv_scores.csv` and `experiment_log.csv` in full. After rerunning it, rerun the Extra Trees notebook, or switch the LR notebook to the same merge logic.
